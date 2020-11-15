@@ -63,10 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\GameManager.cs" />
+    <Compile Include="Assets\Script\Hover.cs" />
     <Compile Include="Assets\Script\LevelManager.cs" />
     <Compile Include="Assets\Script\Point.cs" />
     <Compile Include="Assets\Script\Singleton.cs" />
     <Compile Include="Assets\Script\TileScript.cs" />
+    <Compile Include="Assets\Script\TowerButton.cs" />
     <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\allSprites_retina.xml" />
     <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\onlyObjects_default.xml" />
     <None Include="Assets\Sprites\kenney_topdowntanksredux\License.txt" />
