@@ -7,18 +7,29 @@ public class TileScript : MonoBehaviour
 {
     public Point GridPosition { get; private set; }
 
+    public Vector2 WorldPosition { 
+        get
+        {
+            return new Vector2(transform.position.x + (GetComponent<SpriteRenderer>().bounds.size.x / 2), transform.position.y - (GetComponent<SpriteRenderer>().bounds.size.y/2));
+        }
+    }
+
     public bool IsEmpty{ get; private set; }
 
     private Color32 fullColor = new Color32(174, 56, 17, 255);
 
     private Color32 emptyColor = new Color32(42, 190, 58, 255);
 
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer SpriteRenderer { get; set; }
+
+    public bool Walkable { get; set; }
+
+    public bool Debugging { get; set; }
 
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -29,6 +40,7 @@ public class TileScript : MonoBehaviour
 
     public void Setup(Point gridPos, Vector3 worldPos, Transform parent)
     {
+        Walkable = true;
         IsEmpty = true;
         this.GridPosition = gridPos;
         transform.position = worldPos;
@@ -41,11 +53,11 @@ public class TileScript : MonoBehaviour
         
         if (!EventSystem.current.IsPointerOverGameObject() && GameManager.Instance.ClickedButton != null)
         {
-            if (IsEmpty)
+            if (IsEmpty && !Debugging)
             {
                 ColorTile(emptyColor);
             }
-            if (!IsEmpty)
+            if ((!IsEmpty || name != "GrassSpawnPoint(Clone)") && !Debugging)
             {
                 ColorTile(fullColor);
             }
@@ -59,26 +71,35 @@ public class TileScript : MonoBehaviour
 
     private void OnMouseExit()
     {
-        ColorTile(Color.white);
+        if (!Debugging)
+        {
+            ColorTile(Color.white);
+        }
+        
     }
 
     private void PlaceTower()
     {
         
-        GameObject tower = (GameObject)Instantiate(GameManager.Instance.ClickedButton.TowerPrefab, transform.position, Quaternion.identity);
-        tower.GetComponent<SpriteRenderer>().sortingOrder = GridPosition.Y;
+        if(name == "GrassSpawnPoint(Clone)"){
+            GameObject tower = (GameObject)Instantiate(GameManager.Instance.ClickedButton.TowerPrefab, transform.position, Quaternion.identity);
+            tower.GetComponent<SpriteRenderer>().sortingOrder = GridPosition.Y;
 
-        tower.transform.SetParent(transform);
+            tower.transform.SetParent(transform);
 
-        IsEmpty = false;
+            IsEmpty = false;
 
-        ColorTile(Color.white);
+            ColorTile(Color.white);
+
+            GameManager.Instance.BuyTower();
+
+            Walkable = false;
+        }
         
-        GameManager.Instance.BuyTower();
     }
 
     private void ColorTile(Color newColor)
     {
-        spriteRenderer.color = newColor;
+        SpriteRenderer.color = newColor;
     }
 }

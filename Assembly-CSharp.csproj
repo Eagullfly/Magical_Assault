@@ -63,18 +63,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Astar\AStar.cs" />
+    <Compile Include="Assets\Script\Astar\AStarDebugger.cs" />
+    <Compile Include="Assets\Script\Astar\Node.cs" />
+    <Compile Include="Assets\Script\BuildManager.cs" />
+    <Compile Include="Assets\Script\BuildTowers.cs" />
+    <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Hover.cs" />
     <Compile Include="Assets\Script\LevelManager.cs" />
+    <Compile Include="Assets\Script\ObjectPool.cs" />
     <Compile Include="Assets\Script\Point.cs" />
+    <Compile Include="Assets\Script\Projectiles.cs" />
     <Compile Include="Assets\Script\Singleton.cs" />
+    <Compile Include="Assets\Script\Spawn.cs" />
     <Compile Include="Assets\Script\TileScript.cs" />
     <Compile Include="Assets\Script\TowerButton.cs" />
+    <Compile Include="Assets\Script\WaveSpawner.cs" />
+    <Compile Include="Assets\Script\WayPoints.cs" />
     <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\allSprites_retina.xml" />
+    <None Include="Assets\Sprites\gameicons\license.txt" />
+    <None Include="Assets\Sprites\gameicons\Spritesheet\sheet_black1x.xml" />
     <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\onlyObjects_default.xml" />
+    <None Include="Assets\Sprites\gameicons\Spritesheet\sheet_white2x.xml" />
     <None Include="Assets\Sprites\kenney_topdowntanksredux\License.txt" />
     <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\allSprites_default.xml" />
-    <None Include="Assets\Resources\Level.txt" />
+    <None Include="Assets\Sprites\gameicons\Spritesheet\sheet_white1x.xml" />
+    <None Include="Assets\Sprites\gameicons\Spritesheet\sheet_black2x.xml" />
+    <None Include="Assets\Resources\Level01.txt" />
     <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\onlyObjects_retina.xml" />
     <None Include="Assets\Sprites\tower-defense-top-down\License.txt" />
     <Reference Include="UnityEngine">
