@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4926813459171599718}
   m_Layer: 0
   m_Name: Orc
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   animator: {fileID: -4926813459171599718}
+  health: 100
 --- !u!95 &-4926813459171599718
 Animator:
   serializedVersion: 3
