@@ -1,15 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     public float speed = 10f;
+
+    [HideInInspector]
     public Animator animator;
 
-    public int health = 100;
+    public int startHealth = 100;
+    private int health;
 
     public int value = 20;
+
+    [Header("Unity Stuff")]
+    public Image healthBar;
+
+    private bool isDead = false;
+    
 
     private Transform target;
     private int wavePointIndex = 0;
@@ -17,12 +27,16 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         target = WayPoints.points[0];
+        health = startHealth;
     }
 
     public void TakeDamage(int amount)
     {
         health -= amount;
-        if(health <= 0)
+
+        healthBar.fillAmount = health / startHealth;
+
+        if(health <= 0 && !isDead)
         {
             Die();
         }
@@ -30,8 +44,13 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        isDead = true;
+
         PlayerStats.Money += value;
         animator.SetBool("Alive", false);
+
+        WaveSpawner.EnemiesAlive--;
+
         Destroy(gameObject, 0.25f);
     }
 
@@ -65,6 +84,7 @@ public class Enemy : MonoBehaviour
     void EndPath()
     {
         PlayerStats.Lives--;
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
     }
 

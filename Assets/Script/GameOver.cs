@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public Text roundsText;
 
-    void OnEnable()
-    {
-        roundsText.text = PlayerStats.Rounds.ToString();
-    }
+
+    public string menuSceneName = "MainMenu";
+
 
     public void Retry()
     {
@@ -18,6 +15,7 @@ public class GameOver : MonoBehaviour
 
     public void Menu()
     {
-        Debug.Log("Go to menu.");
+        
+        SceneManager.LoadScene(menuSceneName);
     }
 }

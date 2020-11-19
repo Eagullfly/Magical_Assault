@@ -10,10 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2789391546544179667}
   - component: {fileID: 8376480116129646545}
-  - component: {fileID: 2153238944669266535}
-  - component: {fileID: 1152124282190826802}
   m_Layer: 0
-  m_Name: towerDefense_tile065
+  m_Name: SandSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,27 +81,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2153238944669266535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2272235709635530585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9314b645c705d814ab81549a47042917, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1152124282190826802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2272235709635530585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 343a978492c40524f8d800f992427c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

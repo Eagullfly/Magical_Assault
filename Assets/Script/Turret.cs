@@ -22,6 +22,8 @@ public class Turret : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
 
+    public AudioSource shooting;
+
     
 
 
@@ -86,6 +88,7 @@ public class Turret : MonoBehaviour
 
         if(bullet != null)
         {
+            shooting.Play(0);
             bullet.Seek(target);
         }
     }
