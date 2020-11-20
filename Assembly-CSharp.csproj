@@ -84,7 +84,6 @@
     <Compile Include="Assets\Script\WaveSpawner.cs" />
     <Compile Include="Assets\Script\WayPoints.cs" />
     <None Include="Assets\Audio\ShootingSound\ReadMe.txt" />
-    <None Include="Assets\Resources\Level01.txt" />
     <None Include="Assets\Sprites\tower-defense-top-down\License.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
