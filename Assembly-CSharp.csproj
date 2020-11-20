@@ -83,18 +83,8 @@
     <Compile Include="Assets\Script\Wave.cs" />
     <Compile Include="Assets\Script\WaveSpawner.cs" />
     <Compile Include="Assets\Script\WayPoints.cs" />
-    <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\allSprites_retina.xml" />
-    <None Include="Assets\Sprites\gameicons\license.txt" />
-    <None Include="Assets\Sprites\gameicons\Spritesheet\sheet_black1x.xml" />
-    <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\onlyObjects_default.xml" />
-    <None Include="Assets\Sprites\gameicons\Spritesheet\sheet_white2x.xml" />
     <None Include="Assets\Audio\ShootingSound\ReadMe.txt" />
-    <None Include="Assets\Sprites\kenney_topdowntanksredux\License.txt" />
-    <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\allSprites_default.xml" />
-    <None Include="Assets\Sprites\gameicons\Spritesheet\sheet_white1x.xml" />
-    <None Include="Assets\Sprites\gameicons\Spritesheet\sheet_black2x.xml" />
     <None Include="Assets\Resources\Level01.txt" />
-    <None Include="Assets\Sprites\kenney_topdowntanksredux\Spritesheet\onlyObjects_retina.xml" />
     <None Include="Assets\Sprites\tower-defense-top-down\License.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

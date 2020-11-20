@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
 
         WaveSpawner.EnemiesAlive--;
 
-        Destroy(gameObject, 0.25f);
+        Destroy(gameObject, 0.15f);
     }
 
     void Update()

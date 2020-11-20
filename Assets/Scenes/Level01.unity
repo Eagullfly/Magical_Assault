@@ -3936,17 +3936,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   machineGun:
     prefab: {fileID: 507368969080454336, guid: 03bad2e601d008b4c9b687f3e609b99f, type: 3}
-    cost: 40
+    cost: 50
     upgradedPrefab: {fileID: 7243957499889234064, guid: 6926d7de9d1a9814181ee884df7b40be,
       type: 3}
-    upgradeCost: 25
+    upgradeCost: 30
   cannon:
     prefab: {fileID: 4254713240065859947, guid: 7c6b0cb325321b44b8915ef78d684165,
       type: 3}
-    cost: 50
+    cost: 65
     upgradedPrefab: {fileID: 4968210000880678915, guid: cea6344959c475148b7b1ce4aea2ac93,
       type: 3}
-    upgradeCost: 35
+    upgradeCost: 40
 --- !u!1 &436728099
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,8 +4521,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abace5e2647eb4340bd48c7075a50ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 300
-  startLives: 1
+  startMoney: 200
+  startLives: 10
 --- !u!4 &502471450
 Transform:
   m_ObjectHideFlags: 0
@@ -4565,16 +4565,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 6822794015347551845, guid: 095413d8ce8a9f946911e699e22e86d0, type: 3}
-    count: 1
+    count: 20
     rate: 2
   - enemy: {fileID: 6822794015347551845, guid: 095413d8ce8a9f946911e699e22e86d0, type: 3}
-    count: 2
+    count: 24
     rate: 2
   - enemy: {fileID: 6822794015347551845, guid: 095413d8ce8a9f946911e699e22e86d0, type: 3}
-    count: 5
+    count: 12
     rate: 2
   - enemy: {fileID: 2266058861239656371, guid: 8a45198b86150584691224c972238453, type: 3}
-    count: 3
+    count: 8
+    rate: 1
+  - enemy: {fileID: 2266058861239656371, guid: 8a45198b86150584691224c972238453, type: 3}
+    count: 10
     rate: 1
   gameManager: {fileID: 502471455}
   spawnPoint: {fileID: 1644588954}
@@ -5926,7 +5929,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $50
+  m_Text: $65
 --- !u!222 &593497154
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7539,7 +7542,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: $40
+  m_Text: $50
 --- !u!222 &744411597
 CanvasRenderer:
   m_ObjectHideFlags: 0
