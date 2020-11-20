@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 70
+  controlID: 49
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 71
+  controlID: 50
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 72
+  controlID: 51
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -589,20 +589,20 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Projects\CS583F2020_Wright_Ryan_Project_2B
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 4}
-    m_SelectedIDs: 023e0000
-    m_LastClickedID: 15874
-    m_ExpandedIDs: 00000000f03d0000fe3d000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 54410000
+    m_LastClickedID: 16724
+    m_ExpandedIDs: 000000004041000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -630,7 +630,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f03d0000
+    m_ExpandedIDs: 0000000040410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -753,9 +753,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 023e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f49bffff269cffff3a9cffff089dffff449dffff489dffff009effff149effff169effff309effff349effff9a9fffffae9fffffb09fffffca9fffffce9fffff0ca0ffff20a0ffff26a0ffff44a0ffff4ca0ffff74a0ffff46a2ffff68a7ffff7ca7ffff4ea8ffff8ea8ffff96a8ffff9cf2ffff72f3ffff86f3ffff88f3ffff8cf3ffff94f3ffff1af8ffff5ef9ffff72f9ffff40faffff7efaffff82faffff3cfbffffee4b0000404f00004c5c0000305d0000425e0000105f0000845f0000f6600000ce610000167b0000fc7b0000107d0000e47d000090dc0000e4dc0000d2de0000e2df000064e0000090e50000ace50000381101008c1101007a1301008a1401000c150100
+      m_ExpandedIDs: e2f8fffff6f8ffffc8f9ffffd2f9ffffe0f9ffff3efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -51,7 +51,7 @@ public class WaveSpawner : MonoBehaviour
         }
         
 
-        //Debug.Log("Start Timer!");
+        
         countdown -= Time.deltaTime;
 
         countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);

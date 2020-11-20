@@ -72,7 +72,7 @@ public class Enemy : MonoBehaviour
             EndPath();
             return;
         }
-        //Debug.Log(target.position.x + " " + target.position.y);
+        
         Transform prevTarget = WayPoints.points[wavePointIndex];
         wavePointIndex++;
         

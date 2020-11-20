@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     {
         if (Time.timeScale == 0)
         {
-            //Debug.Log("Something's wrong");
+            
             Time.timeScale = 1f;
 
         }

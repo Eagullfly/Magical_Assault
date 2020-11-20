@@ -66,10 +66,9 @@ public class Turret : MonoBehaviour
         }
         Vector3 dir = target.position - transform.position;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        //Debug.Log(target.position + " " + transform.position);
-        //Quaternion lookRotation = Quaternion.LookRotation(dir);
+        
         Quaternion rotation = Quaternion.Euler(0, 0, angle);
-        //Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
+        
         partToRotate.rotation = Quaternion.Slerp(partToRotate.rotation, rotation, turnSpeed * Time.deltaTime);
 
         if(fireCountdown <= 0f)
